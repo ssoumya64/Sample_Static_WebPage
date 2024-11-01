@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+.main-nav-controller{
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    background: linear-gradient(90deg, #bae0eb, #637388); /* Gradient background */
+    border-bottom: 2px solid rgba(5, 6, 5, 0.046); /* Light blue border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Enhanced shadow */
+    transition: background 0.3s ease; /* Smooth transition for background change */
+}
+.main-nav-controller:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff); /* Background animation on hover */
+}
+#image{
+    height: 94px; /* Set a consistent height for the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+#image:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    transition: transform 0.3s ease;
+}
+
+.nav-link-container{
+    display: flex;
+    justify-content: space-around; /* Spread links evenly */
+    align-items: center;
+    gap:60px;
+    width: 38%;/* Adjust width as needed to space out links */
+    transform: translateX(-120px);
+
+}
+
+.nav-link{
+    list-style: none;
+}
+.nav-link:hover{
+    transform: scale(1.2);
+    color: #8e9297;
+}
+
+.nav-item{
+    display: inline-block;
+    color:rgba(36, 6, 67, 0.653);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px; /* Adds padding around links */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    background: transparent;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.nav-item:hover {
+    background: linear-gradient(135deg, #0f4105); /* Gradient background on hover */
+    color: white; /* Text color changes to white on hover */
+    transform: translateY(-3px) scale(1.05); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
+}
+.nav-item:active {
+    transform: translateY(1px); /* Press-down effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24); /* Reduced shadow on press */
+}
+.download-button{
+    background: linear-gradient(135deg, #072e0a, #0a8a28); /* Gradient background */
+    color: rgb(182, 192, 180);
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    outline: none; /* Remove outline on focus */
+    
+}
+.download-button:hover{
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reverse gradient */
+    transform: translateY(-3px) scale(1.05); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+
+}
+.download-button:active {
+    transform: translateY(1px); /* Press-down effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
