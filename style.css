@@ -160,8 +160,9 @@
     margin-top: 0; /* Removes extra space above the paragraph */
 }
 .upper-content{
-    font-size: 6rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-style:italic;
+    font-weight: 400;
     
 }
 .lobe{
@@ -173,6 +174,11 @@
         2px 2px 0 rgba(0, 0, 0, 0.2), /* Bottom right shadow */
         4px 4px 0 rgba(0, 0, 0, 0.2), /* Further shadow */
         6px 6px 0 rgba(0, 0, 0, 0.2); /* Even further shadow */
+   
+        transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */   
+}
+.lobe:hover {
+    transform: scale(1.1) translateY(-5px); /* Scale up and move up slightly */
 }
 .download-button-lower{
     background: linear-gradient(135deg, #072e0a, #0a8a28); /* Gradient background */
@@ -190,10 +196,11 @@
 .download-button-lower:hover{
     background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reverse gradient */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+    transform: scale(1.1); /* Scale up slightly on hover for popping effect */
 
 }
 .download-button-lower:active{
-    transform: translateY(2px); /* Press-down effect */
+    transform: scale(0.95); /* Press-down effect (smaller than original size) */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
 
