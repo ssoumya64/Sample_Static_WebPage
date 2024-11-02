@@ -8,29 +8,28 @@
     font-style: normal;
 }
 
-
+/* Navigation Bar begin */
 
 .main-nav-controller{
     z-index: 1000;
-    height: 60px;
+    height: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem;
-    background: linear-gradient(90deg, #bae0eb, #637388); /* Gradient background */
+    padding: 5rem 0 3rem 0;
+    background: linear-gradient(10deg, #c9d1da, #e2e8f0); /* Gradient background */
     border-bottom: 2px solid rgba(5, 6, 5, 0.046); /* Light blue border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Enhanced shadow */
-    transition: background 0.3s ease; /* Smooth transition for background change */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transition: background 0.3s ease; 
 }
-.main-nav-controller:hover {
-    background: linear-gradient(90deg, #0072ff, #00c6ff); /* Background animation on hover */
-}
+
 #image{
-    height: 94px; /* Set a consistent height for the logo */
+    height: 120px; /* Set a consistent height for the logo */
     width: auto; /* Maintain aspect ratio */
+    transform: translateX(40px) translateY(-13px);
 }
 #image:hover {
-    transform: scale(1.1); /* Slightly increase the size on hover */
+    transform: translateX(40px) translateY(-10px) scale(1.1); /* Slightly increase the size on hover */
     transition: transform 0.3s ease;
 }
 
@@ -49,7 +48,7 @@
 }
 .nav-link:hover{
     transform: scale(1.2);
-    color: #8e9297;
+    color: #216fcf;
 }
 
 .nav-item{
@@ -65,8 +64,8 @@
 }
 .nav-item:hover {
     background: linear-gradient(135deg, #0f4105); /* Gradient background on hover */
-    color: white; /* Text color changes to white on hover */
-    transform: translateY(-3px) scale(1.05); /* Lift effect on hover */
+    color: rgb(20, 142, 18); /* Text color changes to white on hover */
+    transform: translateY(-3px) scale(1.1); /* Lift effect on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
 }
 .nav-item:active {
@@ -85,15 +84,130 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     outline: none; /* Remove outline on focus */
-    
+    transform: translateX(-120px);
 }
 .download-button:hover{
     background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reverse gradient */
-    transform: translateY(-3px) scale(1.05); /* Lift effect on hover */
+    transform: translateX(-120px) scale(1.05); /* Lift effect on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
 
 }
 .download-button:active {
     transform: translateY(1px); /* Press-down effect */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+/* Navigation Bar End */
+
+
+/* HERO Section begin */
+.hero-container{
+    padding: 6rem 4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.upper-hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.upder-hero-heading{
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 4px 8px rgba(0, 0, 0, 0.2); /* Multiple shadows for depth */
+    animation: bounce 2s infinite; /* Bounce animation */
+    display: inline-block; /* Allows for smoother animation */
+    margin-bottom: 1rem;
+}
+.black-text {
+    color: black; /* Color for "LOBE" */
+    font-size: 5rem;
+    font-weight: 800;
+    margin-right: 1rem;
+}
+
+.sky-text {
+    color:#04ddb2; /* Color for "TOUR" */
+    font-size: 5rem;
+    font-weight: 800;
+}
+.upper-hero-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:rgba(1, 0, 0, 0.584);
+    margin-top: 0; /* Removes extra space above the paragraph */
+}
+.middle-hero-container {
+    text-align: center; /* Center the video container */
+    margin: 0; /* Remove extra margin if necessary */
+}
+.hero-video {
+    width: 100%; /* Video covers maximum width of its container */
+    height: 390px; /* Set height to 500 pixels */
+    margin-top: 1rem; /* Adds some space above the video */
+    margin-right: 5rem;
+    object-fit: cover; /* Ensures the video covers the container without stretching */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
+    border-radius: 8px; /* Optional: adds rounded corners to the video */
+}
+.lower-hero-content{
+    
+    color:rgba(1, 0, 0, 0.852);
+    margin-top: 0; /* Removes extra space above the paragraph */
+}
+.upper-content{
+    font-size: 6rem;
+    font-weight: 500;
+    
+}
+.lobe{
+    color:#04ddb2;
+    font-size: 6rem;
+    font-weight: 500;
+    animation: bounce 1s infinite; /* Bouncy animation */
+    text-shadow: 
+        2px 2px 0 rgba(0, 0, 0, 0.2), /* Bottom right shadow */
+        4px 4px 0 rgba(0, 0, 0, 0.2), /* Further shadow */
+        6px 6px 0 rgba(0, 0, 0, 0.2); /* Even further shadow */
+}
+.download-button-lower{
+    background: linear-gradient(135deg, #072e0a, #0a8a28); /* Gradient background */
+    color: rgb(182, 192, 180);
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    outline: none; /* Remove outline on focus */
+}
+.download-button-lower:hover{
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reverse gradient */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+
+}
+.download-button-lower:active{
+    transform: translateY(2px); /* Press-down effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg); /* Normal state */
+    }
+    25% {
+        transform: perspective(1000px) rotateX(15deg) rotateY(-15deg); /* Slight 3D tilt */
+    }
+    50% {
+        transform: perspective(1000px) rotateX(-15deg) rotateY(15deg); /* Opposite 3D tilt */
+    }
+    75% {
+        transform: perspective(1000px) rotateX(10deg) rotateY(-10deg); /* Back to initial direction */
+    }
 }
